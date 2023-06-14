@@ -22,7 +22,7 @@ while not animal:
     if len(datos.index) == 1:
         animal = datos['animal'].values[0]
     elif len(datos.index) == 0:
-        print('Las respuestas no son conclusivas, ¿quieres empezar de nuevo?')
+        print('Las respuestas no son coherentes, ¿quieres empezar de nuevo?')
         datos = pandas.read_csv('animales.csv')
 
 print(f'La respuesta es:{animal}')
